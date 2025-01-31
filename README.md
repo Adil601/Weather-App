@@ -28,12 +28,3 @@ If the user enters an invalid city name or if there’s an issue with the API re
 7. User-friendly Layout:
 The app presents weather data in a clean, structured way with clear separation of information.
 Input fields and buttons are placed logically, making it simple to search for weather details.
-Technologies Used:
-HTML: Markup for the structure of the app.
-CSS: Styling to create the responsive layout and the dark/light theme toggle effects.
-JavaScript: Handling user interactions, fetching data from the OpenWeather API, and implementing the light/dark mode toggle functionality.
-OpenWeatherMap API: Fetching weather data based on the user's input.
-Key Benefits:
-User Experience (UX): The smooth transition between dark and light modes provides a pleasant experience for users who prefer different visual settings.
-Accessibility: The app’s design considers users who prefer a dark mode interface, ensuring they can use the app comfortably in low-light environments.
-Real-time Updates: The weather data is fetched and displayed in real-time, providing users with the latest weather conditions.
