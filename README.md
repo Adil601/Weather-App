@@ -54,3 +54,7 @@ This **Weather App** allows users to check the weather of any city in real-time.
 
 This project is open-source and available under the [MIT License](LICENSE).
 
+📌 Credits
+Made with ❤️ by Adil
+🔗 GitHub | 🌍 Portfolio | 💬 Contact
+
