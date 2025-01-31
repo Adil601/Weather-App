@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    background: #1e1e1e; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.light {
+    background: #f3f3f3;
+    color: #333;
+}
+
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: #00000000; 
+    border: none;
+    font-size: 1.8rem;
+    padding: 12px;
+    border-radius: 50%; 
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#theme-toggle:hover {
+    filter: hue-rotate(20deg); 
+}
+
+#theme-icon {
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+body.light #theme-toggle {
+    background: #ffffff; 
+}
+
+body.light #theme-icon {
+    color: black !important; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    transition: background 0.3s ease;
+}
+
+body.light .container {
+    background: #ffffff; /* White background in light mode */
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    background: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+body.dark .card {
+    background: #333;
+    color: white;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+body.light .card {
+    background: #f3f3f3; /* Light background in light mode */
+    color: #333; /* Dark text color in light mode */
+}
+
+.cityDisplay {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.tempDisplay {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #007aff;
+}
+
+.descDisplay, .humidityDisplay {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.weatherForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.cityInput {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+    transition: 0.3s ease;
+    outline: none;
+}
+
+.cityInput:focus {
+    box-shadow: 0 0 12px rgba(0, 122, 255, 0.6);
+    border: 2px solid #007aff;
+}
+
+button[type="submit"] {
+    padding: 12px 25px;
+    background: #007aff;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #005bb5;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cityInput, button[type="submit"] {
+        width: 85%;
+    }
+}
