@@ -58,5 +58,5 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 Made with ❤️ by [Adil](#)
 
-🔗 [GitHub](https://github.com/Adil601/) | 🌍 [Portfolio](#) | 💬 [Contact](adilkhan88144@gmail.com)
+🔗 [GitHub](https://github.com/Adil601/) | 🌍 [Portfolio](#) | 💬 [Contact]()
 
